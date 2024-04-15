@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .square-image {
+    display: none; 
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hero img {
+      display: none; 
+    }
+  
+    .square-image {
+      display: block !important; 
+      scale: 90%;
+    }
+  }
+
+ 
+.adventures-section p {
+  padding: 20px; 
+}
+  
+/* Select the images within the adventures-section */
+.adventures-section img {
+  width: 80px; /* Adjust the width as needed */
+  height: auto;
+  transform: rotate(-5deg); /* Rotate the images counter-clockwise by 5 degrees */
+}
+
+/* Adjust the rotation for specific images */
+.adventures-section img[src*="bone.png"] {
+  transform: rotate(20deg); /* Rotate the bone image clockwise by 5 degrees */
+}
+
+
+.adventures-section img[src*="collar.png"] {
+  transform: rotate(-20deg); /* Rotate the dog house image counter-clockwise by 10 degrees */
+}
+
+.adventures-section img[src*="dogbed.png"] {
+  transform: rotate(20deg); /* Rotate the bone image clockwise by 5 degrees */
+}
+
+.adventures-section img[src*="dogfood.png"] {
+  transform: rotate(-20deg); /* Rotate the dog house image counter-clockwise by 10 degrees */
+}

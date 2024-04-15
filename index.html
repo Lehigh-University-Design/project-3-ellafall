@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <a href="index.html"><img src="images/logo.png" alt="Mabel's Logo"></a>
+        <nav>
+          <div class="menu-icon">
+              <button id="hamburger-btn">&#9776;</button> <!-- Hamburger Icon -->
+          </div>
+          <ul id="nav-links">
+              <li><a href="index.html">Meet Mabel</a></li>
+              <li><a href="adventures.html">Adventures</a></li>
+              <li><a href="photo_album.html">Photo Album</a></li>
+              <li><a href="thoughts.html">Mabel's Thoughts</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img class= "hero-img" img src="images/mabel_heros.png" alt="Mabel's Hero Image">
+        <img class="square-image" src="images/square_hero.png" alt="Mabel's Square Image">
+        <h1>Meet Mabel</h1>
+    </section>
+
+        <section class="intro">
+            <p>Meet Mabel. Mabel is a brooding, sassy, opinionated, (sometimes) smart English Bulldog.  Mabel goes by many names: Mabes, Mabraham Lincoln, Mabel Syrup, Piggy, and Mogwai. She has lived with the Fall Family since she was 8 weeks old back in 2011. Now, she is nearing 13 years old, and has given her family that many years of love, cuddles, and hilarious stories. </p>
+            <p>Mabel is more than a dog to the Fall family, she is considered a daughter and a sister. This comes with many benefits to her, such as getting to pick and choose who’s bed she gets to sleep in each night (and who to grace her rhythmic snores to) as well as extra scraps privileges at the dinner table. As all of the (human) Fall children have left home for college, she has taken over the role of the spoiled only child, getting all Mom and Dad’s attention.</p>
+            <p>This web site is an homage to the spunky character and love that Mabel brings to the lives of everyone she meets. Enjoy!</p>
+        </section>
+    </main>
+    <script>
+      document.getElementById('hamburger-btn').addEventListener('click', function() {
+          var navLinks = document.getElementById('nav-links');
+          if (navLinks.style.display === 'block') {
+              navLinks.style.display = 'none';
+          } else {
+              navLinks.style.display = 'block';
+          }
+      });
+      </script></body>
+</html>

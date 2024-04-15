@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 60px;
+  border-top: 2px dotted #ffffff;
+  border-bottom: 2px dotted #ffffff;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #CB8694;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 100px 0; /* Increase padding for more space */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 100px; /* Increase margin for more space */
+}
+
+nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* SemiBold */
+  text-decoration: none;
+  color: #CB8694;
+  padding: 15px; /* Increase padding for more space */
+}
+
+nav a:hover {
+  color: #543624;
+}
+
+/* Add more spacing between page titles and dotted rules */
+nav h2 {
+  margin: 200px 0; /* Increase margin for more space */
+}
+
+/* Extend rules to reach the edge of the viewport */
+nav hr {
+  margin: 30px -100vw; /* Extend rules beyond the viewport */
+  width: calc(100vw + 200vw); /* Calculate width to cover entire viewport */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro p, .more-link a {
+  margin-top: 20px;
+}
+
+.more-link img {
+  width: 50%;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin-right: 0;
+  }
+
+  .more-link img {
+      width: 100%;
+  }
+}
+
+/* General body styles */
+body {
+  background-color: #F4E9E7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; /* Light */
+  color: #CB8694;
+  padding: 20px; /* Adds breathing room around the content */
+}
+/* Base font size for body */
+body {
+  font-size: 20px; /* Adjust the base font size as needed */
+}
+
+/* Responsive design considerations */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+      font-size: 12px; /* Further decrease font size for even smaller screens */
+  }
+}
+
+/* Header styles */
+h1, h2 {
+  font-family: 'Shrikhand', serif;
+  color: #191918;
+}
+
+h2 { /* Smaller headers for sections like 'Puppy Teeth', etc. */
+  font-size: 1.5em; /* Adjust size as needed */
+  color: #CB8694;
+  margin-top: 0;
+  text-align: left;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* SemiBold */
+  text-decoration: none;
+  color: #CB8694;
+}
+
+nav a:hover {
+  color: #543624;
+  text-decoration: none;
+}
+
+/* Photo and Thoughts page specific */
+.photo-gallery img {
+  width: 100%; /* Example to make images responsive */
+  height: auto;
+}
+
+blockquote {
+  font-family: 'Shrikhand', serif;
+  font-size: 2em; /* Large text for quotes */
+  color: #CB8694;
+  margin: 20px 0; /* Adding space around quotes */
+  margin-bottom: 3rem; /* Adjust margin as needed */
+  padding: 10px; /* Internal spacing for breathing room */
+}
+
+
+/* Responsive design considerations */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  blockquote {
+      text-align: center; /* Center-align quotes on smaller screens */
+      font-size: 1.1em; /* Decrease font size for smaller screens */
+  }
+}
+
+/* Existing CSS styles */
+
+/* Hamburger Menu Styles */
+.menu-icon button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #CB8694;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+#nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-icon button {
+      display: block; /* Show hamburger icon in mobile view */
+  }
+
+  #nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hide links in mobile view */
+      text-align: center;
+  }
+
+  #nav-links a {
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: #CB8694;
+  }
+
+  #nav-links li {
+      border-bottom: 1px solid #EAEAEA;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+      text-align: center;
+  }
+
+  #nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hide links in mobile view */
+      text-align: center; /* Center links in mobile view */
+  }
+
+  #nav-links a {
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      color: #CB8694;
+  }
+
+  #nav-links li {
+      border-bottom: 1px solid #EAEAEA;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+}
+
+#nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  padding: 10px 0; /* Add padding above and below the contents */
+}
+
+header a img {
+  width: 60px;
+  display: block;
+  margin-bottom: 20px; /* Add margin below the logo */
+}
+
+header a {
+  text-decoration: none; /* Removes underline from links */
+}
+
+/* Add more padding to the container holding the quotes */
+.thoughts {
+  padding: 0 100px; /* Adjust padding as needed */
+}
+
+.story p {
+  text-align: left;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.intro {
+  padding: 20px;
+  text-align: center;
+}
+
+.more-link {
+  margin-top: 20px;
+}
+
+.more-link img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+

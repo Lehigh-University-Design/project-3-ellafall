@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.thoughts.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Shrikhand&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="Mabel's Logo"></a>
+        <nav>
+            <div class="menu-icon">
+                <button id="hamburger-btn">&#9776;</button>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Meet Mabel</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="photo_album.html">Photo Album</a></li>
+                <li><a href="thoughts.html">Mabel's Thoughts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <section class="hero">
+                <img class="hero-img" src="images/mabel_heros3.png" alt="Thoughts">
+                <img class="square-image" src="images/square_hero3.png" alt="Thoughts's Square Image">
+              <h1>Mabel's Thoughts</h1>
+          </section>
+
+        <p>A few of Mabel’s opinions on the important things in life:</p>
+        <div class="thoughts">
+            <blockquote style="text-align: left;">"Some say 'follow your heart,' but I say 'follow your nose... especially if it leads to the kitchen.'"</blockquote>
+            <blockquote style="text-align: right;">"A family's love is best measured in the number of belly rubs and ear scratches they give."</blockquote>
+            <blockquote style="text-align: left;">"Remember, a well-timed puppy eye can turn 'no more treats' into 'maybe just one more."</blockquote>
+            <blockquote style="text-align: right;">"They say beauty is in the eye of the beholder, but let's be honest, in my case, it's just an undeniable fact."</blockquote>
+            <blockquote style="text-align: left;">"True happiness is finding that special spot on the sofa between all your favorite people... and maybe a dropped snack or two."</blockquote>
+            <blockquote style="text-align: right;">"Wisdom is knowing which battles to fight and which to nap through, especially if the sunbeam is just right."</blockquote>
+            <blockquote style="text-align: left;">"Woof woof woof!"</blockquote>
+            <blockquote style="text-align: right;">"Bark bark!"</blockquote>
+
+        </div>
+    </main>
+    <script>
+      document.getElementById('hamburger-btn').addEventListener('click', function() {
+          var navLinks = document.getElementById('nav-links');
+          if (navLinks.style.display === 'block') {
+              navLinks.style.display = 'none';
+          } else {
+              navLinks.style.display = 'block';
+          }
+      });
+      </script>
+</body>
+</html>
